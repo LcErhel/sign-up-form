@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./javascript.js" defer></script>
 </head>
 <body>
     <div class="image-wrapper">
@@ -32,7 +33,7 @@
             <div class="group-wrap">
                 <div class="input-wrap">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" >
                 </div>
                 <div class="input-wrap">
                     <label for="tel">Phone number</label>
@@ -43,6 +44,7 @@
                 <div class="input-wrap">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" required>
+                    <span id="inform">* Passwords do not match</span>
                 </div>
                 <div class="input-wrap">
                     <label for="passwordConfirm">Confirm password</label>
@@ -51,7 +53,7 @@
             </div>
         </form>
         <div>
-            <button type="submit" form="myForm">Create Account</button>
+            <button type="button" form="myForm" id="registerButton">Create Account</button>
         </div>
         <div class="login">
             Already have an account? <a href="">Log in</a>

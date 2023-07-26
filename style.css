@@ -98,6 +98,7 @@ form > legend {
     display: flex;
     flex-direction: column;
     padding: 1rem 3rem;
+    position: relative;
 }
 
 .input-wrap > input {
@@ -141,6 +142,20 @@ div > button:hover {
 
 a, a:visited {
     color: rgb(111, 140, 68);
+}
+
+.visible {
+    display: block;
+    position: absolute;
+    color: rgb(190, 22, 22);
+    width: 200px;
+    height: 24px;
+    top: 70px;
+    right: 100px;
+}
+
+span {
+    display: none;
 }
 
 @media (max-width: 1000px) {
