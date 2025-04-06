@@ -4,16 +4,46 @@
     box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "norse";
+	src: 
+		url("./fonts/Norse-Bold.otf");
+}
+
 .container {
     display: flex;
     height: 100vh;
 }
 
 .image {
-    flex: 1 1 200px;
-    background-color: aqua;
+    display: flex;
+    flex: 1 1 20vh;
+    justify-content: center;
+    align-items: center;
     background: url(./images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center;
     background-size: cover;
+}
+
+.image-nested {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.image-nested-logo {
+    content: url(./images/odin-lined.png);
+    max-height: 150px;
+}
+
+.image-nested-text {
+    display: flex;
+    align-items: center;
+    font-size: 6rem;
+    font-family: "norse", serif;
+    max-height: 150px;
 }
 
 .form {
