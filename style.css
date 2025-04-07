@@ -6,7 +6,7 @@
 
     --main-color: rgb(20, 20, 20);
     --secondary-color: rgb(255, 255, 255);
-    --tertiary-color: rgb(83, 129, 87);
+    --tertiary-color: rgb(89, 109, 72);
     --bg-color-main: rgb(240, 240, 240);
 }
 
@@ -114,6 +114,11 @@ input {
 
 input:invalid {
     border-color: rgb(235, 135, 135);
+}
+
+input:focus {
+    border: 2px solid rgb(231, 231, 231);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn {
