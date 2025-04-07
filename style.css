@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    --main-color: rgb(20, 20, 20);
+    --secondary-color: rgb(70, 70, 70);
+    --tertiary-color: rgb(230, 230, 230);
+    --bg-color-main: rgb(220, 220, 220);
 }
+
+
 
 @font-face {
 	font-family: "norse";
@@ -17,7 +24,7 @@
 
 .image {
     display: flex;
-    flex: 1 1 20vh;
+    flex: 1 1 30vh;
     justify-content: center;
     align-items: center;
     background: url(./images/halie-west-25xggax4bSA-unsplash.jpg) no-repeat center;
@@ -31,17 +38,17 @@
     padding: 16px 0;
     margin-bottom: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--tertiary-color);
 }
 
 .image-mention {
-    color: white;
+    color: var(--tertiary-color);
     bottom: 0;
     position: fixed;
 }
 
 a:visited {
-    color: white;
+    color: var(--tertiary-color);
 }
 
 .image-nested-logo {
@@ -58,6 +65,11 @@ a:visited {
 }
 
 .form {
-    flex: 3 1 auto;
-    background-color: grey;
+    flex: 3 1 70vh;
+    padding: 2rem;
+    background-color: var(--bg-color-main);
+}
+
+.form-row {
+    display: flex;
 }
