@@ -25,6 +25,7 @@
 
 .image {
     display: flex;
+    min-width: 300px;
     flex: 1 1 30vh;
     justify-content: center;
     align-items: center;
@@ -40,6 +41,7 @@
     margin-bottom: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--secondary-color);
+    max-height: 12rem;
 }
 
 .image-mention {
@@ -72,16 +74,16 @@
 }
 
 .form > * {
-    padding: 2rem;
+    padding: 1rem 2rem;
 }
 
 .form-header {
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: 4em;
+    margin-bottom: 1.5rem;
 }
 
 .form-header p:nth-last-child(1) {
-    margin-top: 2rem;
+    margin-top: 1rem;
 } 
 
 .form-register {
@@ -97,7 +99,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -111,6 +113,7 @@
 input {
     font-size: 1.2rem;
     border: 2px solid rgb(175, 175, 175);
+    border-radius: 0.2rem;
 }
 
 input:invalid {
@@ -118,7 +121,7 @@ input:invalid {
 }
 
 .btn {
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     font-size: 1rem;
     font-weight: bold;
