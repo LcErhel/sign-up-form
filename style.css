@@ -37,7 +37,7 @@
     display: flex;
     flex: 1;
     justify-content: center;
-    padding: 16px 0;
+    padding: 0.2rem 0;
     margin-bottom: 50vh;
     background-color: rgba(0, 0, 0, 0.5);
     color: var(--secondary-color);
@@ -91,10 +91,6 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.form-footer {
-    
-}
-
 .form-row {
   display: flex;
   justify-content: flex-start;
@@ -112,7 +108,7 @@
 
 input {
     font-size: 1.2rem;
-    border: 2px solid rgb(175, 175, 175);
+    border: 2px solid rgb(231, 231, 231);
     border-radius: 0.2rem;
 }
 
