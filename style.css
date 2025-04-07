@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 1rem;
 
     --main-color: rgb(20, 20, 20);
     --secondary-color: rgb(255, 255, 255);
@@ -75,7 +76,13 @@
 }
 
 .form-header {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
 }
+
+.form-header p:nth-last-child(1) {
+    margin-top: 2rem;
+} 
 
 .form-register {
     background-color: var(--secondary-color);
@@ -103,6 +110,11 @@
 
 input {
     font-size: 1.2rem;
+    border: 2px solid rgb(175, 175, 175);
+}
+
+input:invalid {
+    border-color: rgb(235, 135, 135);
 }
 
 .btn {
@@ -112,9 +124,15 @@ input {
     font-weight: bold;
     color: var(--secondary-color);
     background-color: var(--tertiary-color);
+    margin-bottom: 1rem;
 }
 
 a,
 a:visited {
     color: var(--tertiary-color);
+}
+
+.text-bold {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
